@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a29d29865cf9452895eb026082deb99, type: 3}
   m_Name: Prefab Spawner
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1037986276137829099, guid: 83325a223050f33408e5ee0edf420c96, type: 3}
+  prefab: {fileID: 9075940413389154496, guid: 9721bb672c94241bcbcbe63f79bf136d, type: 3}
   spawnLocation: {x: 0, y: 0, z: 0}

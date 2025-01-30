@@ -5,12 +5,12 @@ public class WallRun : MonoBehaviour
     public float jumpForce = 10f;
     public float leftXCoordinate = -5f;
     public float rightXCoordinate = 5f;
-    private Rigidbody2D rb;
+    private Rigidbody rb;
     private Vector2 startTouchPosition, endTouchPosition;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -45,7 +45,7 @@ public class WallRun : MonoBehaviour
 
     private void JumpToPosition(float xCoordinate)
     {
-        rb.velocity = new Vector2(0, jumpForce);
+        rb.linearVelocity = new Vector2(0, jumpForce);
         transform.position = new Vector2(xCoordinate, transform.position.y);
     }
 }
