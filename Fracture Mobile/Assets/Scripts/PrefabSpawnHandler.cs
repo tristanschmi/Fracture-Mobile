@@ -4,6 +4,7 @@ public class PrefabSpawnHandler : MonoBehaviour
 {
     public PrefabSpawner prefabSpawner;
     public float spawnCooldown = 1f; // Cooldown time in seconds between spawns
+    public float newSpeed = 10f; // New speed value to set for the prefabs
 
     private float lastSpawnTime = 0f;
 
@@ -13,7 +14,16 @@ public class PrefabSpawnHandler : MonoBehaviour
 
         if (Time.time >= lastSpawnTime + spawnCooldown)
         {
-            prefabSpawner.SpawnPrefab();
+            GameObject spawnedPrefab = prefabSpawner.SpawnPrefab();
+            if (spawnedPrefab != null)
+            {
+                // Set the speed of the newly instantiated prefab
+                MoveAlongZAxis moveScript = spawnedPrefab.GetComponent<MoveAlongZAxis>();
+                if (moveScript != null)
+                {
+                    moveScript.SetSpeed(newSpeed);
+                }
+            }
             lastSpawnTime = Time.time;
             Debug.Log("Prefab spawned at: " + Time.time);
         }
@@ -21,5 +31,11 @@ public class PrefabSpawnHandler : MonoBehaviour
         {
             Debug.LogWarning("Spawn cooldown active. Next spawn available at: " + (lastSpawnTime + spawnCooldown));
         }
+    }
+
+    public void UpdateSpeed(float speed)
+    {
+        newSpeed = speed;
+        Debug.Log("Speed updated to: " + newSpeed);
     }
 }

@@ -8,4 +8,9 @@ public class MoveAlongZAxis : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
+
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
 }

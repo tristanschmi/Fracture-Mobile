@@ -6,15 +6,16 @@ public class PrefabSpawner : ScriptableObject
     public GameObject prefab;
     public Vector3 spawnLocation;
 
-    public void SpawnPrefab()
+    public GameObject SpawnPrefab()
     {
         if (prefab != null)
         {
-            Instantiate(prefab, spawnLocation, Quaternion.identity);
+            return Instantiate(prefab, spawnLocation, Quaternion.identity);
         }
         else
         {
             Debug.LogWarning("Prefab is not assigned.");
+            return null;
         }
     }
 }

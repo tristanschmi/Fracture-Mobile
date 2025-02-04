@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Prefab Spawner
   m_EditorClassIdentifier: 
   prefab: {fileID: 6103772288585242488, guid: af03517ae8ec46f468a8ace77560d6aa, type: 3}
-  spawnLocation: {x: 0, y: 0, z: 0}
+  spawnLocation: {x: 0, y: 0, z: -50}
