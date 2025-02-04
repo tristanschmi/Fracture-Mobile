@@ -1144,12 +1144,32 @@ PrefabInstance:
       value: shoeda1 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 563820306}
     - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PrefabSpawnHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7098110280514463010, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5525,9 +5545,29 @@ PrefabInstance:
       value: shoeda1
       objectReference: {fileID: 0}
     - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 563820306}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PrefabSpawnHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7098110280514463010, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.45
@@ -5775,7 +5815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabSpawner: {fileID: 11400000, guid: f3caa1237354b4baabfe1d1ad92557cb, type: 2}
-  spawnCooldown: 0.1
+  spawnCooldown: 0.01
   newSpeed: 150
 --- !u!4 &563820307
 Transform:
@@ -21824,12 +21864,32 @@ PrefabInstance:
       value: shoeda1 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 563820306}
     - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PrefabSpawnHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7098110280514463010, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27549,12 +27609,32 @@ PrefabInstance:
       value: shoeda1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 563820306}
     - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSpeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PrefabSpawnHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863953735520311238, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7098110280514463010, guid: 90a2e96edd131d941af132017239fdb9, type: 3}
       propertyPath: m_LocalPosition.x
