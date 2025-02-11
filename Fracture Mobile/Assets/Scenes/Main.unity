@@ -3406,7 +3406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedData: {fileID: 11400000, guid: c911baec2629aaf4d87b2a4e12c1b076, type: 2}
-  speedIncrease: 25
+  speedIncrease: 10
 --- !u!114 &389711873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35107,6 +35107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8803404007430008203, guid: 3177c2db487df53428146407a588935f, type: 3}
+      propertyPath: speedData
+      value: 
+      objectReference: {fileID: 11400000, guid: c911baec2629aaf4d87b2a4e12c1b076, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
