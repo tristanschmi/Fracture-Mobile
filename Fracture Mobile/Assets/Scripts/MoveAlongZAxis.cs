@@ -2,12 +2,7 @@ using UnityEngine;
 
 public class MoveAlongZAxis : MonoBehaviour
 {
-<<<<<<< HEAD
     public SpeedData speedData;
-=======
-    public float speed = 5f;
-    public SpeedChanger speedChanger;
->>>>>>> origin/main
 
     public void Update()
     {
@@ -27,11 +22,5 @@ public class MoveAlongZAxis : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player") && speedChanger != null)
-        {
-            speedChanger.ApplySpeed(this);
-        }
-    }
+   
 }
