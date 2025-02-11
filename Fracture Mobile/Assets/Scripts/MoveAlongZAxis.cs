@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class MoveAlongZAxis : MonoBehaviour
 {
-    public float speed = 5f;
+    public SpeedData speedData;
 
-    void Update()
+    public void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.position += new Vector3(0, 0, speedData.speed) * Time.deltaTime;
     }
 
-    public void SetSpeed(float newSpeed)
+    public void IncreaseSpeed(float amount)
     {
-        speed = newSpeed;
+        speedData.speed += amount;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Destroy"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

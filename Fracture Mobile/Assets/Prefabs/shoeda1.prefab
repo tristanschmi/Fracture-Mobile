@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 6343537453798563426}
   - component: {fileID: 2017824270757485987}
   - component: {fileID: 6947262179562413937}
-  - component: {fileID: 3863953735520311238}
   m_Layer: 0
   m_Name: shoeda1
-  m_TagString: Untagged
+  m_TagString: SpeedIncrease
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,52 +121,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63af5ef9a27044acbcf995976d8af7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
---- !u!114 &3863953735520311238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3560652680327046322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e76f3ac5cde4371a209d02f8de5af4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHoldTime: 0.1
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PrefabSpawnHandler, Assembly-CSharp
-        m_MethodName: UpdateSpeed
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 200
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerEnterRepeatEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEnterEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerHoldTime: 0.01
-  repeatHoldTime: 0.01
-  exitHoldTime: 0.01
-  canRepeat: 0
-  repeatTimes: 10
