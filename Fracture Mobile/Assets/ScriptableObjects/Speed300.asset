@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a29d29865cf9452895eb026082deb99, type: 3}
-  m_Name: Prefab Spawner
+  m_Script: {fileID: 11500000, guid: f93306c18327a41668d442cf49b4c594, type: 3}
+  m_Name: Speed300
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6103772288585242488, guid: af03517ae8ec46f468a8ace77560d6aa, type: 3}
-  spawnLocation: {x: 0, y: 0, z: -100}
+  newSpeed: 300
