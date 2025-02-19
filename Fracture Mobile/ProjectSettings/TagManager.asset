@@ -8,6 +8,7 @@ TagManager:
   - Trigger
   - Destroy
   - SpeedIncrease
+  - DecreaseTrigger
   layers:
   - Default
   - TransparentFX

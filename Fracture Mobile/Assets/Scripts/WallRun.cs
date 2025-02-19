@@ -45,7 +45,7 @@ public class WallRun : MonoBehaviour
 
     private void JumpToPosition(float xCoordinate)
     {
-        rb.velocity = new Vector2(0, jumpForce);
+        rb.linearVelocity = new Vector2(0, jumpForce);
         transform.position = new Vector3(xCoordinate, transform.position.y, transform.position.z);
     }
 }

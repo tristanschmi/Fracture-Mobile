@@ -10,6 +10,7 @@ public class TextMeshProBehaviour : MonoBehaviour
 {
     [SerializeField] private GameAction gameActionObj;
     [SerializeField] private UnityEvent awakeEvent, raiseEvent;
+    [SerializeField] private IntData intDataObj; // Reference to the IntData ScriptableObject
 
     private TextMeshProUGUI textObj;
     private WaitForSeconds waitForFixedUpdate;
@@ -21,6 +22,22 @@ public class TextMeshProBehaviour : MonoBehaviour
         waitForFixedUpdate = new WaitForSeconds(0.1f); // Set delay time for UpdateNumberCount
         Awake();
         awakeEvent.Invoke();
+    }
+
+    private void OnEnable()
+    {
+        if (intDataObj != null)
+        {
+            intDataObj.onValueChanged.AddListener(UpdateText);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (intDataObj != null)
+        {
+            intDataObj.onValueChanged.RemoveListener(UpdateText);
+        }
     }
 
     private void OnDestroy()
@@ -35,6 +52,15 @@ public class TextMeshProBehaviour : MonoBehaviour
     }
 
     private void Raise() => raiseEvent.Invoke();
+
+    public void UpdateText()
+    {
+        if (intDataObj != null)
+        {
+            textObj.text = intDataObj.Value.ToString();
+        }
+    }
+
     public void UpdateText(IntData intDataObj) => textObj.text = intDataObj.Value.ToString();
 
     public void UpdateText(string obj) => textObj.text = obj;
